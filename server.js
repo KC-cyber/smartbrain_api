@@ -12,7 +12,7 @@ const image=require('./controllers/image');
 const db=knex({
     client: 'mysql',
     connection: {      
-      host : '127.0.0.1',
+      host : 'cleardb-lively-68863',
       user : 'root',
       password : 'kc0405',
       database : 'smartbrain',
