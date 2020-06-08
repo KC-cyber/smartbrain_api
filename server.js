@@ -19,15 +19,6 @@ const db=knex({
     }
   });
 
-//   db.select().table('users')
-// .then(data=>{
-//     console.log(data);
-// })
-// // .catch(err=>console.log(err));
-// const data=[31];
-// db('users').where({id: JSON.parse(data)}).select('*')
-// //db('users').where({id:data}).select('*')
-// .then(console.log);
 const app=express();
 app.use(bodyParser.json());
 app.use(cors());
