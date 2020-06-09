@@ -12,10 +12,12 @@ const image=require('./controllers/image');
 const db=knex({
     client: 'mysql',
     connection: {
-      host: 'us-cdbr-east-05.cleardb.net',
-      user: 'be4b1b1e656b37',
-      password:'34ad5860',
-      database:'heroku_1a3c60a75c4443d',
+      connectionString : process.env.DATABASE_URL,
+      ssl:true,
+      // host: 'us-cdbr-east-05.cleardb.net',
+      // user: 'be4b1b1e656b37',
+      // password:'34ad5860',
+      // database:'heroku_1a3c60a75c4443d',
 
 
       // host : 'cleardb-lively-68863',
