@@ -13,9 +13,9 @@ const db=knex({
     client: 'mysql',
     connection: {
       host: process.env.DATABASE_HOST,
-      user: 'be4b1b1e656b37',
-      password:'34ad5860',
-      database:'heroku_1a3c60a75c4443d',
+      user: process.env.DATABASE_USER,
+      password:process.env.DATABASE_PWD,
+      database:process.env.DATABASE_DB,
 
 
       // host : 'cleardb-lively-68863',
