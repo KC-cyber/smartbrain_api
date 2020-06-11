@@ -16,12 +16,6 @@ const db=knex({
       user: process.env.DATABASE_USER,
       password:process.env.DATABASE_PWD,
       database:process.env.DATABASE_DB,
-
-
-      // host : 'cleardb-lively-68863',
-      // user : 'root',
-      // password : 'kc0405',
-      // database : 'smartbrain',
     }
   });
 

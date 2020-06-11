@@ -1,11 +1,4 @@
 const handleSignin=(req,res,db,bcrypt)=>{
-    // Load hash from your password DB.
-// bcrypt.compare("newbie2",'$2a$10$j4.COHl2jrJpyq.nSjhJ1u/s0YQ8H7fcVvfK6IppfE4bnq4kjU5Ra' , function(err, res) {
-//     console.log("first guess",res);
-// });
-// bcrypt.compare("veggies", '$2a$10$j4.COHl2jrJpyq.nSjhJ1u/s0YQ8H7fcVvfK6IppfE4bnq4kjU5Ra', function(err, res) {
-//     console.log('second guess',res);
-// });
 const {email,password}=req.body;
 if(!email || !password){
     return res.status(400).json('incorrect form submission');
